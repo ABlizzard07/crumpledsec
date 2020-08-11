@@ -12,7 +12,7 @@ class Paper{
         this.height = 60;
         this.diameter = diameter;
         
-        this.image = loadImage("crumpledsec/paper.png");
+        this.image = loadImage("./paper.png");
         World.add(world,this.body);
     }
     display(){
