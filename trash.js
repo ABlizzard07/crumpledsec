@@ -7,7 +7,7 @@ class Trash{
         this.body = Bodies.rectangle(x,y,width,height,options);
         this.width = 150;
         this.height = 150;
-        this.image = loadImage("crumpledsec\dustbingreen.png");
+        this.image = loadImage("./dustbingreen.png");
 
         World.add(world,this.body);
         World.add(world,this.image);
