@@ -16,7 +16,7 @@ function setup() {
 	ground = createSprite(650,695,1300,20);
 
 	//Create the Bodies Here.
-	paper = new Paper(200,660,40);
+	paper = new Paper(200,670,40);
 	trash = new Trash(1230,640,20,120); 
 
 	Engine.run(engine);
