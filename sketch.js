@@ -17,7 +17,7 @@ function setup() {
 
 	//Create the Bodies Here.
 	paper = new Paper(200,200,40);
-	trash = new Trash(1230,640,20,120); 
+	dustbin = new Trash(1230,640,20,120); 
 
 	Engine.run(engine);
   
@@ -34,7 +34,7 @@ function draw() {
 
   ground.shapeColor = rgb(random(255), random(255), random(255));
   drawSprites();
-  trash.display();
+  dustbin.display();
   paper.display();
   
   Engine.update(engine);
