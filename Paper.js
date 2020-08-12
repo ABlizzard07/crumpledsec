@@ -7,7 +7,7 @@ class Paper{
             density: 2.4
         }
         
-        this.body = Bodies.circle(x,y,diameter,options);
+        this.body = Bodies.circle(x,y,(this.diameter-20)/2,options);
         this.width = 60;
         this.height = 60;
         this.diameter = diameter;
