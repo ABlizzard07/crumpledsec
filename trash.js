@@ -5,20 +5,37 @@ class Trash{
         }
 
         this.body = Bodies.rectangle(x,y,width,height,options);
+        this.x = 1000;
+        this.y = 680;
         this.width = 150;
         this.height = 150;
+     //   this.image = loadImage("sprites/dustbingreen.png");
         this.image = loadImage("./dustbingreen.png");
-        this.bottomBody=Bodies.rectangle(this.x, this.y, this.dustbinWidth, this.wallThickness, {isStatic:true}) 
-        this.leftWallBody=Bodies.rectangle(this.x-this.dustbinWidth/2, this.y-this.dustbinHeight/2, this.wallThickness, this.dustbinHeight, {isStatic:true}) 
-        this.rightWallBody=Bodies.rectangle(x+width/2, y-height/2, wallThickness,height,options);
-
+        this.bottomBody=Bodies.rectangle(this.x, this.y, this.width, this.height, options);
+        this.leftWallBody=Bodies.rectangle(this.x-this.width/2.15, this.y-this.height/2, this.width/15, this.height,options); 
+        this.rightWallBody=Bodies.rectangle(this.x+this.width/2.15, this.y-this.height/2, this.width,this.height,options); 
+      
 
         World.add(world,this.body);
         World.add(world,this.image);
+       
     }
     display(){
+        rectMode(CENTER);
         var pos = this.body.position;
+        var bottombodypos = this.bottomBody.position;
+        var leftpos = this.leftWallBody.position;
+        var rightpos = this.rightWallBody.position;
+
+        fill("black");
+        strokeWeight(4);
+        stroke("black");
+        rect(bottombodypos.x,bottombodypos.y,this.width,this.height/15);
+        rect(leftpos.x,leftpos.y,this.width/15,this.height);
+        rect(rightpos.x,rightpos.y,this.width/15,this.height);
+       
+
         imageMode(CENTER);
-        image(this.image, 1000, 610, this.width, this.height);
+        image(this.image, 1000, 600, this.width, this.height);
     }
 }

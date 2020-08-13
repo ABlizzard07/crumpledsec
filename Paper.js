@@ -12,7 +12,7 @@ class Paper{
         this.height = 60;
         this.diameter = 150;
         
-     //   this.image = loadImage("sprites/paper.png");
+     //  this.image = loadImage("sprites/paper.png");
         this.image = loadImage("./paper.png");
         World.add(world,this.body);
     }
