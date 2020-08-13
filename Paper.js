@@ -17,13 +17,12 @@ class Paper{
         World.add(world,this.body);
         World.add(world,this.image);
     }
+
     display(){
-       
-    
        push();
- //      translate(this.body.position.x, this.body.position.y);
+       translate(this.body.position.x, this.body.position.y);
        imageMode(CENTER);
-       image(this.image, 200, 665, (this.diameter -20)/2, this.height);
+       image(this.image, 0, 0, (this.diameter -20)/2, this.height);
        pop();
     }
 }
