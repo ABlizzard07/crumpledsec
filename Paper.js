@@ -12,7 +12,7 @@ class Paper{
         this.height = 60;
         this.diameter = 150;
         
-     //  this.image = loadImage("sprites/paper.png");
+      //  this.image = loadImage("sprites/paper.png");
         this.image = loadImage("./paper.png");
         World.add(world,this.body);
     }
@@ -22,8 +22,7 @@ class Paper{
        push();
        translate(this.body.position.x, this.body.position.y);
        imageMode(CENTER);
-       image(this.image, 500, 200, (this.diameter -20)/2, this.height);
+       image(this.image, 200, 665, (this.diameter -20)/2, this.height);
        pop();
-       console.log(this.body.position);
     }
 }
