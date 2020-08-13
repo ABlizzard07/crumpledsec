@@ -8,6 +8,8 @@ class Paper{
         }
         
         this.body = Bodies.circle(x,y,diameter,options);
+        this.x=200;
+        this.y=665;
         this.width = 60;
         this.height = 60;
         this.diameter = 150;
@@ -15,6 +17,7 @@ class Paper{
       //  this.image = loadImage("sprites/paper.png");
         this.image = loadImage("./paper.png");
         World.add(world,this.body);
+        World.add(world,this.image);
     }
     display(){
        
