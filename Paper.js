@@ -8,8 +8,6 @@ class Paper{
         }
         
         this.body = Bodies.circle(x,y,diameter,options);
-        this.x=200;
-        this.y=665;
         this.width = 60;
         this.height = 60;
         this.diameter = 150;
