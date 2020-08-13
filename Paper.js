@@ -18,11 +18,12 @@ class Paper{
     }
     display(){
        
+    
        push();
        translate(this.body.position.x, this.body.position.y);
        imageMode(CENTER);
        image(this.image, 500, 200, (this.diameter -20)/2, this.height);
        pop();
-       
+       console.log(this.body.position);
     }
 }
